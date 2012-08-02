@@ -1,10 +1,48 @@
-copy it save it to a text file called gifmake in your root folder
+GIF MAKE
+----------
+DEPENDENCIES:
+---------------
+- mplayer
+- ImageMagick
+- gifsicle
+-------------
+install dependencies with
+sudo apt-get install mplayer gifsicle
+-------------
+Installation:
+-------------
+move gifmake to /usr/bin/ :
 
-move text file to /usr/bin/ by opening a terminal then: sudo cp ./gifmake /usr/bin/gifmake
+ sudo cp ./gifmake /usr/bin/gifmake
 
-add your user as owner as well as execute permissions. open a terminal then substitute your login name for USER: sudo chmod +x /usr/bin/gifmake
+add execute permissions. 
+
+sudo chmod +x /usr/bin/gifmake
 
 finally you can now launch it with :
+
 gifmake 
 
-or create a desktop or menu launcher simply by linking to /usr/bin/gifmake
+-------------
+USAGE:
+------------
+Go through the list of options one at a time following the onscreen instructions.
+
+1) for the location of the video you want to make a gif from make sure you enter the absolute path to the folder location.  When you hit enter you will be asked for the filename e.g. /home/user/videos
+
+2) Set the seek to the time at which you want the gif to begin e.g. 12:42
+Set the gif length in seconds. e.g. 5
+Set the output folder e.g. gif_export    (no path necessary)
+
+3) Set the image type to png
+	Set the image size e.g. 1000x500
+	Set the image crop e.g. 250+40
+4) Set the Fuzz amout e.g. 1.6
+Set the animated speed (frame delay) e.g. 8
+Loop Forever  e.g. y
+Set the output gif name (no extension) e.g.  Example
+
+5)  create the gif.  Look for the output folder in your home directory aswell as your new gif with the output name.
+
+6) compress the gif.  New gif should be found in home directory called complete.gif
+6
