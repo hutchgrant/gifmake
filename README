@@ -1,0 +1,10 @@
+copy it save it to a text file called gifmake in your root folder
+
+move text file to /usr/bin/ by opening a terminal then: sudo cp ./gifmake /usr/bin/gifmake
+
+add your user as owner as well as execute permissions. open a terminal then substitute your login name for USER: sudo chmod +x /usr/bin/gifmake
+
+finally you can now launch it with :
+gifmake 
+
+or create a desktop or menu launcher simply by linking to /usr/bin/gifmake
